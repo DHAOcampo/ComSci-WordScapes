@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+</html>
+<head>
+<style>
+    #screen{
+        width: 500px;
+        height: 300px;
+        background-color: blanchedalmond;
+    }
+
+    #element{
+    background-color: black;
+    width: 20px;
+    height: 30px;
+}
+
+    #A{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 300px;
+        left: 200px;
+        background-color: brown;
+    }
+
+    #B{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 400px;
+        left: 600px;
+        background-color: blue;
+    }
+
+    #C{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        position: absolute;
+        top: 600px;
+        left: 300px;
+    }
+
+    #space{
+        background-color: rebeccapurple;
+        height: 600px;
+    }
+</style>
+
+
+
+
+
+</head>
+<body>
+
+    <div id="screen">
+
+    </div>
+
+    <div id="space" onmouseup="mouseup()">
+    <div id="A" onmousedown="mouseover(); myFunctionA(); creatboxA() ;">
+
+    </div>
+
+    <div id="B" onmousedown="mouseover(); myFunctionB(); creatboxB() ;">
+
+    </div>
+
+    <div id="C" onmousedown="mouseover(); myFunctionC(); creatboxC() ;">
+
+    </div>
+</div>
+
+
+<script>
+      var A=0;
+        var B=0;
+        var C=0;
+        var counter=0;
+        const Aid = document.getElementById("A");
+        const Bid = document.getElementById("B");
+       const Cid = document.getElementById("C");
+</script>
+
+    <script>
+        function myFunctionA(){
+            x += 'a';
+            display();
+
+          if(counter>0)  {
+            var box = document.getElementById("element");
+            box.remove();
+            creatboxA()
+        }
+            counter++
+ Aid.removeEventListener('mouseenter', myFunctionA);
+        }
+
+         
+     </script>
+     <script>
+         function myFunctionC(){
+     x += 'c';
+     display();
+     if(counter>0){
+     var box = document.getElementById("element");
+            box.remove();
+            creatboxC();
+     }
+     counter++;
+     Cid.removeEventListener('mouseenter', myFunctionC);
+         
+  }
+     </script>
+
+     <script>
+         function myFunctionB(){
+     x += 'b';
+     display();
+
+     if(counter>0)  {
+            var box = document.getElementById("element");
+            box.remove();
+            creatboxB()
+        }
+            counter++
+     Bid.removeEventListener('mouseenter', myFunctionB);
+     
+  }
+     </script>
+     
+    <script>
+        function display(){
+            document.getElementById("screen").innerHTML = x;
+        }
+    </script>
+    <script>
+        var x='';
+        var counter=0;
+    function mouseover(){
+        Aid.addEventListener("mouseenter", myFunctionA);
+    Bid.addEventListener("mouseenter", myFunctionB);
+ Cid.addEventListener("mouseenter", myFunctionC);
+       
+    }
+    </script>
+<script>
+    function mouseup(){
+        counter=0;
+        Aid.removeEventListener('mouseenter', myFunctionA);
+        Bid.removeEventListener('mouseenter', myFunctionB);
+        Cid.removeEventListener('mouseenter', myFunctionC);
+        x = '';
+        display();
+        var box = document.getElementById("element");
+        box.remove();
+    }
+</script>
+
+<script>
+    function creatboxA(){
+        var element = document.createElement("div");
+        element.setAttribute('id','element');
+ Aid.appendChild(element);
+ rotate();
+ distance();
+    }
+    function creatboxB(){
+        var element = document.createElement("div");
+        element.setAttribute('id','element');
+ Bid.appendChild(element);
+ rotate();
+ distance();
+
+    }
+    function creatboxC(){
+        var element = document.createElement("div");
+        element.setAttribute('id','element');
+ Cid.appendChild(element);
+ rotate();
+ distance();
+
+    }
+</script>
+<script>
+   function rotate(){
+   let box = document.querySelector("#element");
+let boxBoundingRect = box.getBoundingClientRect();
+let boxCenter= {
+	x: boxBoundingRect.left + boxBoundingRect.width/2, 
+  y: boxBoundingRect.top + boxBoundingRect.height/2
+};
+
+document.addEventListener("mousemove", e => {
+	let angle = Math.atan2(e.pageX - boxCenter.x, - (e.pageY - boxCenter.y) )*(180 / Math.PI);	    
+	box.style.transform = `rotate(${angle}deg)`;  
+})
+   }
+</script>
+
+<script>
+    function distance() {
+        let box = document.querySelector("#element");
+let boxBoundingRect = box.getBoundingClientRect();
+let boxCenter= {
+	x: boxBoundingRect.left + boxBoundingRect.width/2, 
+  y: boxBoundingRect.top + boxBoundingRect.height/2
+};
+
+document.addEventListener("mousemove", e => {
+	let distance = Math.sqrt(Math.pow((e.pageX - boxCenter.x),2)+Math.pow((e.pageY - boxCenter.y),2))/30;
+    box.style.transform +=`scaleY(${distance})`;
+    box.style.transformOrigin = "bottom";
+})
+
+    }
+</script>
+</body>
+
+</html>
