@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset = "utf-8";>
+<html>
+<head title="wor">
 <style>
     #screen{
         width: 500px;
@@ -19,7 +18,7 @@
         width: 50px;
         height: 50px;
         position: absolute;
-        top: 300px;
+        top: 600px;
         left: 200px;
         background-color: brown;
     }
@@ -39,7 +38,16 @@
         background-color: aqua;
         position: absolute;
         top: 600px;
-        left: 300px;
+        left: 400px;
+    }
+
+    #D{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        position: absolute;
+        top: 400px;
+        left: 400px;
     }
 
     #space{
@@ -47,7 +55,11 @@
         height: 600px;
     }
 </style>
-<title>WordScapes - Balingkilat Edition</title>
+
+
+
+
+
 </head>
 <body>
 
@@ -67,6 +79,10 @@
     <div id="C" onmousedown="mouseover(); myFunctionC(); creatboxC() ;">
 
     </div>
+
+    <div id="D" onmousedown="mouseover(); myFunctionD(); creatboxD() ;">
+
+    </div>
 </div>
 
 
@@ -78,6 +94,7 @@
         const Aid = document.getElementById("A");
         const Bid = document.getElementById("B");
        const Cid = document.getElementById("C");
+       const Did = document.getElementById("D");
 </script>
 
     <script>
@@ -96,6 +113,22 @@
 
          
      </script>
+
+     <script>
+         function myFunctionD(){
+            x += 'd';
+            display();
+
+          if(counter>0)  {
+            var box = document.getElementById("element");
+            box.remove();
+            creatboxD()
+        }
+            counter++
+ Did.removeEventListener('mouseenter', myFunctionD);
+        }
+     </script>
+
      <script>
          function myFunctionC(){
      x += 'c';
@@ -139,7 +172,7 @@
         Aid.addEventListener("mouseenter", myFunctionA);
     Bid.addEventListener("mouseenter", myFunctionB);
  Cid.addEventListener("mouseenter", myFunctionC);
-       
+ Did.addEventListener("mouseenter", myFunctionD);
     }
     </script>
 <script>
@@ -148,6 +181,7 @@
         Aid.removeEventListener('mouseenter', myFunctionA);
         Bid.removeEventListener('mouseenter', myFunctionB);
         Cid.removeEventListener('mouseenter', myFunctionC);
+        Did.removeEventListener('mouseenter', myFunctionC);
         x = '';
         display();
         var box = document.getElementById("element");
@@ -178,6 +212,14 @@
  rotate();
  distance();
 
+    }
+
+    function creatboxD(){
+        var element = document.createElement("div");
+        element.setAttribute('id','element');
+ Did.appendChild(element);
+ rotate();
+ distance(); 
     }
 </script>
 <script>
@@ -212,10 +254,6 @@ document.addEventListener("mousemove", e => {
 })
 
     }
-</script>
-
-<script>
-
 </script>
 </body>
 
