@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head title="wor">
+    <meta name="viewport" content="width=981px, height=1038px, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
     body {
         background-color:grey;
         background-image:url(https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.6435-9/37565561_1929457340685616_1378833464366727168_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=Qf_PqGvkv_gAX-8BqQZ&_nc_ht=scontent.fmnl17-1.fna&oh=00_AT95Cs6D1_KxHk4DKdATFvgcYBUDJ66dEP6rW36rr1CVng&oe=62625F3E);
         background-repeat:no-repeat;
+        overflow: hidden;
 
     }
-
+h1{
+    text-align: center;
+    font-size: 30px;
+}
     #screen{
         width: fit-content;
         height:fit-content;
@@ -28,12 +36,22 @@
     background-color: rgba(64, 64, 64, 0.76);
     width: 20px;
     height: 30px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    position: relative;
+    z-index:-9;
+    left:25px;
 }
 
 #line{
-    background-color: #ED685F;
+    background-color: #FF5757;
     width: 20px;
     height: 30px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    z-index:-9;
+    position: relative;
+    left:25px;
 }
 
 .letter {
@@ -47,10 +65,10 @@
         position: absolute;
         top: 350px;
         left: 705px;
-        background-color: none;
+        background-image: url("A.png");
+        background-size: cover;
         font-size:4rem;
         user-select:none;
-        border-radius:99px;
         z-index:1;
     }
 
@@ -61,10 +79,10 @@
         position: absolute;
         top: 500px;
         left: 600px;
-        background-color: none;
+        background-image: url("C.png");
+        background-size: cover;
         font-size:4rem;
         user-select:none;
-        border-radius:99px;
         z-index:1;
     }
 
@@ -72,13 +90,13 @@
         width: 70px;
         height: 70px;
         text-align:center;
-        background-color: none;
+        background-image: url("S.png");
+        background-size: cover;
         position: absolute;
         top: 500px;
         left:810px;
         font-size:4rem;
         user-select:none;
-        border-radius:99px;
         z-index:1;
     }
 
@@ -86,19 +104,20 @@
         width: 70px;
         height: 70px;
         text-align:center;
-        background-color: blue;
+        background-image: url("T.png");
+        background-size: cover;
         position: absolute;
         top: 650px;
         left: 705px;
         font-size:4rem;
         user-select:none;
-        border-radius:99px;
         z-index:1;
     }
 
     #space{
-        background-color: rgba(255, 255, 255, 0.66);
-        width:300px;
+        width:1000px;
+        height:1000px;
+        z-index: -20;
         margin-left:auto;
         margin-right:auto;
     }
@@ -112,6 +131,22 @@
     .circle, .box {
         position:fixed;
         z-index:0;
+    }
+    #wordlist{
+        height: 500px;
+        width: 300px;
+        padding: 5px;
+        background-color: rgba(165, 165, 165, 0.8);
+        border: solid 3px rgba(66, 66, 66, 0.76);
+        border-radius: 6px;
+        color: rgba(64, 64, 64, 1);
+        position: fixed;
+        font-size: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+float: left;
+margin-left: 200px;
+margin-top: 300px;
+        z-index: -23;
     }
     #star {
         width:100px;
@@ -145,6 +180,9 @@
     ul {
         list-style-type: none;
     }
+    .instr{
+    float:left
+}
 </style>
 
 
@@ -160,50 +198,20 @@
         counter=0;
     }
 }
+
 </script>
 
 
 </head>
 <body>
 <div class="body">
+    <div id="wordlist">
+        
+    </div>
     <img src="circle.png" class="circle">
     <img src="box4.png" class="box">
     <div class="container" id="screen">
 
-    </div>
-    <div id="space" onmouseup="mouseup()">
-        <div id="A" class="letters" onmousedown="mouseover(); myFunctionA(); creatboxA() ;">
-            <p>
-                A
-            </p>
-        </div>
-
-        <div id="B" class="letters" onmousedown="mouseover(); myFunctionB(); creatboxB() ;">
-            <p>
-                E
-            </p>
-        </div>
-
-        <div id="C" class="letters" onmousedown="mouseover(); myFunctionC(); creatboxC() ;">
-            <p>
-                S
-            </p>
-        </div>
-
-        <div id="D" class="letters" onmousedown="mouseover(); myFunctionD(); creatboxD() ;">
-            <p>
-                T
-            </p>
-        </div>
-    </div>
-    <div id="score" class="container">
-        <img id="star" src="https://clipart.info/images/ccovers/1495916677round-star-png-image-yellow.png">
-        <p id="count">
-            0
-        </p>
-        <p class="sct">
-          score
-        </p>
     </div>
     <div class="instr dropdown">
         <button class="btn btn-info" onclick="dropdownfunction()">How to Play</button>
@@ -229,6 +237,41 @@
     </div>
 </div>
 
+    <div id="space" onmouseup="mouseup()">
+        <div id="A" class="letters" onmousedown="mouseover(); myFunctionA(); creatboxA() ;">
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="B" class="letters" onmousedown="mouseover(); myFunctionB(); creatboxB() ;">
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="C" class="letters" onmousedown="mouseover(); myFunctionC(); creatboxC() ;">
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="D" class="letters" onmousedown="mouseover(); myFunctionD(); creatboxD() ;">
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    <div id="score" class="container">
+        <img id="star" src="https://clipart.info/images/ccovers/1495916677round-star-png-image-yellow.png">
+        <p id="count">
+            0
+        </p>
+        <p class="sct">
+          score
+        </p>
+    </div>
+   
 
 
 
@@ -245,7 +288,7 @@
         const Bid = document.getElementById("B");
        const Cid = document.getElementById("C");
        const Did = document.getElementById("D");
-       const arrayRight = ["", "", "", "", "", "", "", "", "", "",];
+       const arrayRight = ["____", "____", "____", "____", "____", "____", "___", "___", "___", "___","___","__",];
 </script>
 
     <script>
@@ -335,124 +378,169 @@
     </script>
 <script>
     function mouseup(){
-      if(x == 'east'){
-            if(arrayRight[0] = "east"){
+      if(x == 'EAST'){
+            if(arrayRight[0] == "east"){
               window.alert("You've already written this answer down!");
               window.alert(arrayRight);
             }
             else{
-              window.alert(arrayRight);
               right++;
               displayOne();
               arrayRight[0] = "east";
+              window.alert(arrayRight);
+              wordlist();
             }
     }
-    if(x == 'eats'){
-          if(arrayRight[1] = "eats"){
+    if(x == 'EATS'){
+          if(arrayRight[1] == "eats"){
             window.alert("You've already written this answer down!");
             window.alert(arrayRight);
           }
           else{
-            window.alert(arrayRight);
             right++;
             displayOne();
             arrayRight[1] = "eats";
+            window.alert(arrayRight);
+            wordlist();
           }
   }
-  if(x == 'sate'){
-        if(arrayRight[2] = "sate"){
+  if(x == 'SATE'){
+        if(arrayRight[2] == "sate"){
           window.alert("You've already written this answer down!");
           window.alert(arrayRight);
         }
         else{
-          window.alert(arrayRight);
           right++;
           displayOne();
           arrayRight[2] = "sate";
+          window.alert(arrayRight);
+          wordlist();
         }
 }
-if(x == 'seat'){
-      if(arrayRight[3] = "seat"){
+if(x == 'SEAT'){
+      if(arrayRight[3] == "seat"){
         window.alert("You've already written this answer down!");
         window.alert(arrayRight);
       }
       else{
-        window.alert(arrayRight);
         right++;
         displayOne();
         arrayRight[3] = "seat";
+        window.alert(arrayRight);
+        wordlist();
       }
 }
-if(x == 'teas'){
-      if(arrayRight[4] = "teas"){
+if(x == 'TEAS'){
+      if(arrayRight[4] == "teas"){
         window.alert("You've already written this answer down!");
         window.alert(arrayRight);
       }
       else{
-        window.alert(arrayRight);
         right++;
         displayOne();
         arrayRight[4] = "teas";
+        window.alert(arrayRight);
+        wordlist();
       }
 }
-if(x == 'tase'){
-      if(arrayRight[5] = "tase"){
+if(x == 'TASE'){
+      if(arrayRight[5] == "tase"){
         window.alert("You've already written this answer down!");
         window.alert(arrayRight);
       }
       else{
-        window.alert(arrayRight);
+
         right++;
         displayOne();
         arrayRight[5] = "tase";
+        window.alert(arrayRight);
+        wordlist();
       }
 }
-if(x == 'tea'){
-      if(arrayRight6[6] = "tea"){
+
+
+      if(x == 'TEA'){
+      if(arrayRight[6] == "tea"){
         window.alert("You've already written this answer down!");
         window.alert(arrayRight);
       }
       else{
-        window.alert(arrayRight);
         right++;
         displayOne();
         arrayRight[6] = "tea";
+        window.alert(arrayRight);
+        wordlist();
       }
 }
-if(x == 'sea'){
-      if(arrayRight[7] = "sea"){
+
+if(x == 'SEA'){
+      if(arrayRight[7] == "sea"){
         window.alert("You've already written this answer down!");
         window.alert(arrayRight);
       }
       else{
-        window.alert(arrayRight);
+ 
         right++;
         displayOne();
         arrayRight[7] = "sea";
+        window.alert(arrayRight);
+        wordlist();
       }
 }
-if(x == 'sat'){
-      if(arrayRight[8] = "sat"){
+if(x == 'SAT'){
+      if(arrayRight[8] == "sat"){
         window.alert("You've already written this answer down!");
         window.alert(arrayRight);
       }
       else{
-        window.alert(arrayRight);
         right++;
         displayOne();
         arrayRight[8] = "sat";
+        window.alert(arrayRight);
+        wordlist();
       }
 }
-if(x == 'set'){
-      if(arrayRight[9] = "set"){
+if(x == 'SET'){
+      if(arrayRight[9] == "set"){
         window.alert("You've already written this answer down!");
         window.alert(arrayRight);
       }
-      else{
-        window.alert(arrayRight);
+     else{
+ 
         right++;
         displayOne();
         arrayRight[9] = "set";
+        window.alert(arrayRight);
+        wordlist();
+      }
+
+}
+if(x == 'ATE'){
+      if(arrayRight[10] == "ate"){
+        window.alert("You've already written this answer down!");
+        window.alert(arrayRight);
+      }
+     else{
+ 
+        right++;
+        displayOne();
+        arrayRight[10] = "ate";
+        window.alert(arrayRight);
+        wordlist();
+      }
+}
+if(x == 'AT'){
+      if(arrayRight[11] == "at"){
+        window.alert("You've already written this answer down!");
+        window.alert(arrayRight);
+      }
+     else{
+ 
+        right++;
+        displayOne();
+        arrayRight[11] = "at";
+        window.alert(arrayRight);
+        wordlist();
       }
 }
        counter=0;
@@ -583,6 +671,19 @@ div.addEventListener('dragstart', (e) => {
 })
 
 </script>
+<script>
+    function wordlist(){
+        var word=document.getElementById("wordlist");
+        word.innerHTML = "<h1> Wordlist <h1> ";
+    for (let i = 0; i <  arrayRight.length; i++) {
+        word.innerHTML +=  arrayRight[i] + "<br>";
+      }
+    }
+
+      </script>
+      <script>
+          wordlist();
+      </script>
 </body>
 
 </html>
