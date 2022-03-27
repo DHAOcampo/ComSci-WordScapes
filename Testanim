@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head title="wor">
+<style>
+body{
+  width: 1440px;
+}
+    #screen{
+        width: 500px;
+        height: 300px;
+        background-color: blanchedalmond;
+        float: left;
+}
+    .container{
+        width: 940px;
+        height: 300px;
+        background-color: blanchedalmond;
+        float: left;
+    }
+
+    #element{
+    background-color: black;
+    width: 20px;
+    height: 30px;
+}
+
+#line{
+    background-color: red;
+    width: 20px;
+    height: 30px;
+}
+
+
+
+    #A{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 600px;
+        left: 200px;
+        background-color: brown;
+    }
+
+    #B{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 400px;
+        left: 600px;
+        background-color: blue;
+    }
+
+    #C{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        position: absolute;
+        top: 600px;
+        left: 400px;
+    }
+
+    #D{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        position: absolute;
+        top: 400px;
+        left: 400px;
+    }
+
+    #space{
+        background-color: rebeccapurple;
+        height: 700px;
+    }
+</style>
+
+
+
+
+
+</head>
+<body>
+
+    <div id="screen">
+
+    </div>
+    <div class = "container">
+      <div id = "animation" hidden = true>
+        <iframe src="https://giphy.com/embed/BPJmthQ3YRwD6QqcVD" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/HBOMax-hbomax-the-great-gatsby-2013-thegreatgatsbyonhbomax-BPJmthQ3YRwD6QqcVD">via GIPHY</a></p>
+      </div>
+    </div>
+    <div id="space" onmouseup="mouseup()">
+
+    </div>
+
+    <div id="A" onmousedown="mouseover(); myFunctionA(); creatboxA() ;">
+
+    </div>
+
+    <div id="B" onmousedown="mouseover(); myFunctionB(); creatboxB() ;">
+
+    </div>
+
+    <div id="C" onmousedown="mouseover(); myFunctionC(); creatboxC() ;">
+
+    </div>
+
+    <div id="D" onmousedown="mouseover(); myFunctionD(); creatboxD() ;">
+
+    </div>
+</div>
+
+
+<script>
+      var A=0;
+        var B=0;
+        var C=0;
+        var angle;
+        var distance;
+        var counter=0;
+        var right = 0;
+        var abcdright = 0;
+        const Aid = document.getElementById("A");
+        const Bid = document.getElementById("B");
+       const Cid = document.getElementById("C");
+       const Did = document.getElementById("D");
+       const intErvAl = setInterval(animaplay(), 10000);
+</script>
+
+    <script>
+        function myFunctionA(){
+            x += 'a';
+            display();
+
+          if(counter>0)  {
+            var box = document.getElementById("element");
+            box.remove();
+            createline();
+            creatboxA();
+        }
+            counter++;
+ Aid.removeEventListener('mouseenter', myFunctionA);
+        }
+
+
+     </script>
+
+     <script>
+         function myFunctionD(){
+            x += 'd';
+            display();
+          if(counter>0)  {
+            var box = document.getElementById("element");
+            box.remove();
+            createline();
+            creatboxD();
+        }
+            counter++;
+ Did.removeEventListener('mouseenter', myFunctionD);
+        }
+     </script>
+
+     <script>
+         function myFunctionC(){
+     x += 'c';
+     display();
+     if(counter>0){
+     var box = document.getElementById("element");
+            box.remove();
+            createline();
+            creatboxC();
+
+     }
+     counter++;
+     Cid.removeEventListener('mouseenter', myFunctionC);
+
+  }
+     </script>
+
+     <script>
+         function myFunctionB(){
+     x += 'b';
+     display();
+     if(counter>0)  {
+            var box = document.getElementById("element");
+            box.remove();
+            createline();
+            creatboxB();
+        }
+            counter++;
+     Bid.removeEventListener('mouseenter', myFunctionB);
+  }
+     </script>
+
+    <script>
+        function display(){
+            document.getElementById("screen").innerHTML = x;
+        }
+    </script>
+
+    <script>
+       function displayOne(){
+         document.getElementById("right").innerHTML = right;
+       }
+    </script>
+
+    <script>
+        var x='';
+        var counter=0;
+    function mouseover(){
+        Aid.addEventListener("mouseenter", myFunctionA);
+    Bid.addEventListener("mouseenter", myFunctionB);
+ Cid.addEventListener("mouseenter", myFunctionC);
+ Did.addEventListener("mouseenter", myFunctionD);
+    }
+    </script>
+<script>
+    function mouseup(){
+      if(x == 'abcd'){
+        if(abcdright > 0){
+          window.alert("You've already answered this!");
+        }
+        else{
+          function animaplay(){
+            document.getElementById("animation").hidden = false;
+            }
+            clearInterval(intErvAl);
+            document.getElementById("animation").hidden = true;
+          right++;
+          abcdright++;
+          displayOne();
+        }
+      }
+        counter=0;
+        Aid.removeEventListener('mouseenter', myFunctionA);
+        Bid.removeEventListener('mouseenter', myFunctionB);
+        Cid.removeEventListener('mouseenter', myFunctionC);
+        Did.removeEventListener('mouseenter', myFunctionD);
+        x = '';
+        display();
+        var box = document.getElementById("element");
+        box.remove();
+        const collection = document.getElementsByClassName("line");
+for (let i = 0; i < collection.length; i++) {
+  collection[i].remove();
+}
+document.getElementById("line").remove();
+    }
+</script>
+
+<script>
+    function creatboxA(){
+        var element = document.createElement("div");
+        element.setAttribute('id','element');
+ Aid.appendChild(element);
+ localStorage.setItem("parent", 1);
+ rotate();
+ distance();
+
+    }
+    function creatboxB(){
+        var element = document.createElement("div");
+        element.setAttribute('id','element');
+ Bid.appendChild(element);
+ localStorage.setItem("parent", 2);
+ rotate();
+ distance();
+
+    }
+    function creatboxC(){
+        var element = document.createElement("div");
+        element.setAttribute('id','element');
+ Cid.appendChild(element);
+ localStorage.setItem("parent", 3);
+ rotate();
+ distance();
+
+
+    }
+
+    function creatboxD(){
+        var element = document.createElement("div");
+        element.setAttribute('id','element');
+        localStorage.setItem("parent", 4);
+ Did.appendChild(element);
+ rotate();
+ distance();
+    }
+</script>
+<script>
+   function rotate(){
+   let box = document.querySelector("#element");
+let boxBoundingRect = box.getBoundingClientRect();
+let boxCenter= {
+	x: boxBoundingRect.left + boxBoundingRect.width/2,
+  y: boxBoundingRect.top + boxBoundingRect.height/2
+};
+
+document.addEventListener("mousemove", e => {
+	let angle = Math.atan2(e.pageX - boxCenter.x, - (e.pageY - boxCenter.y) )*(180 / Math.PI);
+	box.style.transform = `rotate(${angle}deg)`;
+    localStorage.setItem("angle", angle);
+})
+   }
+</script>
+
+<script>
+    function distance() {
+        let box = document.querySelector("#element");
+let boxBoundingRect = box.getBoundingClientRect();
+let boxCenter= {
+	x: boxBoundingRect.left + boxBoundingRect.width/2,
+  y: boxBoundingRect.top + boxBoundingRect.height/2
+};
+
+document.addEventListener("mousemove", e => {
+	let distance = Math.sqrt(Math.pow((e.pageX - boxCenter.x),2)+Math.pow((e.pageY - boxCenter.y),2))/30;
+    box.style.transform +=`scaleY(${distance})`;
+    box.style.transformOrigin = "bottom";
+    localStorage.setItem("distance", distance);
+})
+
+    }
+</script>
+
+<script>
+    function createline(){
+      var distance= localStorage.getItem("distance");
+      var angle= localStorage.getItem("angle");
+      var parent= localStorage.getItem("parent");
+        var element = document.createElement("div");
+        element.setAttribute('id','line');
+        element.setAttribute('class','line');
+
+        if (parent == 1){
+            Aid.appendChild(element);
+        }
+        if (parent == 2){
+            Bid.appendChild(element);
+        }
+        if (parent == 3){
+            Cid.appendChild(element);
+        }
+        if (parent == 4){
+            Did.appendChild(element);
+        }
+
+ element.style.transform += `rotate(${angle}deg)`;
+ element.style.transform +=`scaleY(${distance})`;
+ element.style.transformOrigin = "bottom";
+    }
+</script>
+
+<script>
+    const div = document.querySelector('div')
+div.addEventListener('dragstart', (e) => {
+  e.preventDefault()
+})
+
+</script>
+</body>
+
+</html>
