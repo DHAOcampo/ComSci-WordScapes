@@ -38,3 +38,26 @@ body{
     0%   {transform: scale(1);}
     100% {transform: scale(0);}
   }
+
+  .perfect{
+width: 100px;
+height: 50px;
+background-color: blanchedalmond;
+color: antiquewhite;
+  }
+
+  #header{
+      background-color: beige;
+  }
+
+  #footer{
+      position: fixed;
+      background-color: blue;
+      height: 20px;
+      bottom: 0px;
+      left:0px;
+      width:144px;
+      transform: scaleX(10);
+      transform-origin:left ;
+      transition: all 1s linear ;
+  }
