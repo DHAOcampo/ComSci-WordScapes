@@ -1,0 +1,40 @@
+#body{
+width: 1440px;
+    height:700px;
+    background-color: blueviolet;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: aquamarine;
+    position: fixed;
+    top:200px;
+    left:200px;
+}
+
+
+.ring{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border:solid 3px white;
+    position: relative;
+    right:13px;
+    bottom: 13px;
+    animation-name: ring ;
+    animation-duration: 2s;
+    transform: scale(0);
+}
+
+@keyframes ring {
+    0%   {transform: scale(1);}
+    100% {transform: scale(0);}
+  }
