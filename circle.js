@@ -1,16 +1,20 @@
 var counter = 10;
-
+var endscore = 0;
 function timeremain() {
 if(counter > 10){
     counter = 10;
 }
     counter--
     document.getElementById('footer').style.transform =`scaleX(${counter})`;
+    if (counter<0){
+      counter = 0;
+    }
     if (counter == 0){
         document.getElementById('footer').remove();
         var game = document.createElement("div");
    game.setAttribute('class','end');
         document.getElementById("body").appendChild(game);
+        window.alert(endscore);
     }
 }
 
@@ -36,23 +40,31 @@ element.addEventListener("click", scoreperfect);
 
 function boxdeath(){
     element.remove();
+ head.innerHTML = "BAD";
+ head.classList.remove('animation');
+void head.offsetWidth;
+head.classList.add('animation');
+counter = counter - 3;
+endscore -= 100;
 }
 
 var head =  document.getElementById("header");
 function scoregood(){
 
    head.innerHTML = "GOOD";
-   head.classList.remove('animation'); 
+   head.classList.remove('animation');
   void head.offsetWidth;
   head.classList.add('animation');
 counter = counter + 5;
+endscore += 300;
 }
 function scoreperfect(){
     head.innerHTML = "PERFECT";
-head.classList.remove('animation'); 
+head.classList.remove('animation');
   void head.offsetWidth;
   head.classList.add('animation');
     counter = counter + 10;
+    endscore += 500;
 }
 }
 
@@ -70,31 +82,39 @@ function circle1(){
             timeout = setTimeout(score_perfect, 1000);
      element.addEventListener("click",element.remove);
      yes = setTimeout(boxdeath, 2000);
-    
+
      function score_perfect(){
     element.removeEventListener("click", scoregood);
     element.addEventListener("click", scoreperfect);
     }
-    
+
     function boxdeath(){
         element.remove();
+        head.innerHTML = "BAD";
+        head.classList.remove('animation');
+       void head.offsetWidth;
+       head.classList.add('animation');
+       counter = counter - 3;
+       endscore -= 100;
     }
-    
+
     var head =  document.getElementById("header");
     function scoregood(){
-    
+
        head.innerHTML = "GOOD";
-       head.classList.remove('animation'); 
+       head.classList.remove('animation');
       void head.offsetWidth;
       head.classList.add('animation');
     counter = counter + 5;
+    endscore += 300;
     }
     function scoreperfect(){
         head.innerHTML = "PERFECT";
-    head.classList.remove('animation'); 
+    head.classList.remove('animation');
       void head.offsetWidth;
       head.classList.add('animation');
         counter = counter + 10;
+        endscore += 500;
     }
     }
     function slider(){
@@ -107,7 +127,7 @@ function circle1(){
                 element.appendChild(ball);
                ball.addEventListener("mousedown", moving);
                ball.addEventListener("mouseup",scoreok);
-               
+
         yes = setTimeout(element.remove, 3000);
 
       function moving(){
@@ -127,10 +147,11 @@ function circle1(){
 
       function scoring(){
         head.innerHTML = "PERFECT";
-        head.classList.remove('animation'); 
+        head.classList.remove('animation');
           void head.offsetWidth;
           head.classList.add('animation');
             counter = counter + 10;
+            endscore += 500;
             ball.remove();
             element.remove();
       }
@@ -139,20 +160,22 @@ function circle1(){
         ball.remove();
         element.remove();
      head.innerHTML = "Ok?";
-     head.classList.remove('animation'); 
+     head.classList.remove('animation');
     void head.offsetWidth;
     head.classList.add('animation');
   counter = counter + 1;
+  endscore += 100;
       }
 
       function boxdeath(){
           ball.remove();
           element.remove();
        head.innerHTML = "BAD";
-       head.classList.remove('animation'); 
+       head.classList.remove('animation');
       void head.offsetWidth;
       head.classList.add('animation');
-    counter = counter - 1;
+    counter = counter - 3;
+    endscore -= 100;
 
       }
         }
@@ -167,16 +190,16 @@ function circle1(){
                         element.appendChild(ball);
                        ball.addEventListener("mousedown", moving);
                        ball.addEventListener("mouseup",scoreok);
-                       
+
                 yes = setTimeout(element.remove, 3000);
-        
+
               function moving(){
                 timeout = setTimeout(stoptheleave, 1800);
                 ball.addEventListener("mouseleave", boxdeath);
                 ball.style.transform = "translateX(500px)";
                 timeout = setTimeout(score_perfect, 2000);
               }
-        
+
               function stoptheleave(){
                 element.removeEventListener("mouseleave", boxdeath);
               }
@@ -184,38 +207,40 @@ function circle1(){
                 element.removeEventListener("mouseup",boxdeath);
                 element.addEventListener("mouseup",scoring);
               }
-        
+
               function scoring(){
                 head.innerHTML = "PERFECT";
-                head.classList.remove('animation'); 
+                head.classList.remove('animation');
                   void head.offsetWidth;
                   head.classList.add('animation');
                     counter = counter + 10;
                     ball.remove();
                     element.remove();
+                    endscore += 500;
               }
-        
+
               function scoreok(){
                 ball.remove();
                 element.remove();
              head.innerHTML = "Ok?";
-             head.classList.remove('animation'); 
+             head.classList.remove('animation');
             void head.offsetWidth;
             head.classList.add('animation');
           counter = counter + 1;
+          endscore += 100;
               }
-        
+
               function boxdeath(){
                   ball.remove();
                   element.remove();
                head.innerHTML = "BAD";
-               head.classList.remove('animation'); 
+               head.classList.remove('animation');
               void head.offsetWidth;
               head.classList.add('animation');
             counter = counter - 1;
-        
+            endscore -= 100;
               }
-                }
+        }
     
 
 
