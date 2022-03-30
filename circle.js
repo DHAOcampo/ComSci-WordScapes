@@ -174,7 +174,7 @@ function circle1(){
        head.classList.remove('animation');
       void head.offsetWidth;
       head.classList.add('animation');
-    counter = counter - 3;
+    counter = counter - 1;
     endscore -= 100;
 
       }
