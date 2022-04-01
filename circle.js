@@ -131,7 +131,7 @@ function circle1(){
         yes = setTimeout(element.remove, 3000);
 
       function moving(){
-        timeout = setTimeout(stoptheleave, 1800);
+        timeout = setTimeout(stoptheleave, 2000);
         ball.addEventListener("mouseleave", boxdeath);
         ball.style.transform = "translateX(500px)";
         timeout = setTimeout(score_perfect, 2000);
