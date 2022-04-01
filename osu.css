@@ -2,19 +2,19 @@
 #body{
     width: 1440px;
         height:700px;
-        background-color: blueviolet;
+        background-image: url('34-349511_tokyo-ghoul-wallpaper-8k.jpg');
         padding: 0px;
         margin: 0px;
         margin-left: auto;
         margin-right:auto;
     }
-    
+
     body{
         padding: 0px;
         margin: 0px;
         background-color: black;
     }
-    
+
     #slide{
         width:500px;
         height:100px;
@@ -24,7 +24,7 @@
         top: 300px;
         left: 200px;
     }
-    
+
     #slide1{
         width:500px;
         height:100px;
@@ -35,7 +35,7 @@
         transform: rotate(60deg);
     left: 700px;
     }
-    
+
     .ball{
         width:100px;
         height:100px;
@@ -45,7 +45,7 @@
         position: relative;
         left:-50px;
     }
-    
+
     .ball1{
         width:100px;
         height:100px;
@@ -56,7 +56,7 @@
         left:-50px;
         transform: rotate(60deg);
     }
-    
+
     .end{
         position: relative;
         top:250px;
@@ -67,7 +67,7 @@
         transform:scaleY(7);
         z-index: 1000000;
     }
-    
+
     @keyframes gameover{
         0%   {transform: scaleY(1);}
         100% {transform: scaleY(7);}
@@ -78,13 +78,13 @@
         border-radius: 100%;
         background-color: aquamarine;
     }
-    
+
     #element{
         position: fixed;
         top:200px;
         left:200px;
     }
-    
+
     #element1{
         position: fixed;
         top:300px;
@@ -100,9 +100,9 @@
         top:300px;
         left:500px;
     }
-    
-    
-    
+
+
+
     .ring{
         height: 120px;
         width: 120px;
@@ -115,19 +115,19 @@
         animation-duration: 2s;
         transform: scale(0);
     }
-    
+
     @keyframes ring {
         0%   {transform: scale(1);}
         100% {transform: scale(0);}
       }
-    
+
       .perfect{
     width: 100px;
     height: 50px;
     background-color: blanchedalmond;
     color: antiquewhite;
       }
-    
+
       #header1{
           background-color: beige;
           font-family: 'Allerta', sans-serif;
@@ -138,7 +138,7 @@
           height: 40px;
           padding-top: 10px;
       }
-    
+
       #header{
       width: 100%;
         font-family: 'Allerta', sans-serif;
@@ -147,13 +147,13 @@
         padding: 0px;
         margin: 0px;
     }
-    
-    
+
+
       .animation{
         animation-name: word;
         animation-duration: .5s;
       }
-    
+
       @keyframes word {
         0%   {transform: scale(0);}
         50%   {transform: scale(1.5);}
