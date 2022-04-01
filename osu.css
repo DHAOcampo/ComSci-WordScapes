@@ -1,163 +1,172 @@
 
 #body{
-width: 1440px;
-    height:700px;
-    background-color: blueviolet;
-    padding: 0px;
-    margin: 0px;
-    margin-left: auto;
-    margin-right:auto;
-}
-
-body{
-    padding: 0px;
-    margin: 0px;
-    background-color: black;
-}
-
-#slide{
-    width:500px;
-    height:100px;
-    border-radius: 200px;
-    background-color: orangered;
-    position: relative;
-    top: 500px;
-left: 500px;
-}
-
-#slide1{
-    width:500px;
-    height:100px;
-    border-radius: 200px;
-    background-color: orangered;
-    position: relative;
-    top: 200px;
-    transform: rotate(60deg);
-left: 700px;
-}
-
-.ball{
-    width:100px;
-    height:100px;
-    border-radius: 100%;
-    transition: linear 2s;
-    background-color: brown;
-    position: relative;
-    left:-50px;
-}
-
-.ball1{
-    width:100px;
-    height:100px;
-    border-radius: 100%;
-    transition: linear 2s;
-    background-color: brown;
-    position: relative;
-    left:-50px;
-    transform: rotate(60deg);
-}
-
-.end{
-    position: relative;
-    top:250px;
-    height: 100px;
-    animation-name: gameover;
-    animation-duration: 1s;
-    background-color: aqua;
-    transform:scaleY(7);
-    z-index: 1000000;
-}
-
-@keyframes gameover{
-    0%   {transform: scaleY(1);}
-    100% {transform: scaleY(7);}
-}
-.circle{
-    height: 100px;
+    width: 1440px;
+        height:700px;
+        background-color: blueviolet;
+        padding: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+    }
+    
+    #slide{
+        width:500px;
+        height:100px;
+        border-radius: 200px;
+        background-color: orangered;
+        position: relative;
+        top: 300px;
+        left: 200px;
+    }
+    
+    #slide1{
+        width:500px;
+        height:100px;
+        border-radius: 200px;
+        background-color: orangered;
+        position: relative;
+        top: 200px;
+        transform: rotate(60deg);
+    left: 700px;
+    }
+    
+    .ball{
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+        transition: linear 1.3s;
+        background-color: brown;
+        position: relative;
+        left:-50px;
+    }
+    
+    .ball1{
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+        transition: linear 2s;
+        background-color: brown;
+        position: relative;
+        left:-50px;
+        transform: rotate(60deg);
+    }
+    
+    .end{
+        position: relative;
+        top:250px;
+        height: 100px;
+        animation-name: gameover;
+        animation-duration: 1s;
+        background-color: aqua;
+        transform:scaleY(7);
+        z-index: 1000000;
+    }
+    
+    @keyframes gameover{
+        0%   {transform: scaleY(1);}
+        100% {transform: scaleY(7);}
+    }
+    .circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background-color: aquamarine;
+    }
+    
+    #element{
+        position: fixed;
+        top:200px;
+        left:200px;
+    }
+    
+    #element1{
+        position: fixed;
+        top:300px;
+        left:300px;
+    }
+    #element2{
+        position: fixed;
+        top:400px;
+        left:400px;
+    }
+    #element3{
+        position: fixed;
+        top:300px;
+        left:500px;
+    }
+    
+    
+    
+    .ring{
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+        border:solid 3px white;
+        position: relative;
+        right:13px;
+        bottom: 13px;
+        animation-name: ring;
+        animation-duration: 2s;
+        transform: scale(0);
+    }
+    
+    @keyframes ring {
+        0%   {transform: scale(1);}
+        100% {transform: scale(0);}
+      }
+    
+      .perfect{
     width: 100px;
-    border-radius: 100%;
-    background-color: aquamarine;
-}
-
-#element{
-    position: fixed;
-    top:200px;
-    left:200px;
-}
-
-#element1{
-    position: fixed;
-    top:300px;
-    left:300px;
-}
-
-
-
-
-.ring{
-    height: 120px;
-    width: 120px;
-    border-radius: 100%;
-    border:solid 3px white;
-    position: relative;
-    right:13px;
-    bottom: 13px;
-    animation-name: ring;
-    animation-duration: 2s;
-    transform: scale(0);
-}
-
-@keyframes ring {
-    0%   {transform: scale(1);}
-    100% {transform: scale(0);}
-  }
-
-  .perfect{
-width: 100px;
-height: 50px;
-background-color: blanchedalmond;
-color: antiquewhite;
-  }
-
-  #header1{
-      background-color: beige;
-      font-family: 'Allerta', sans-serif;
-      font-size: 20px;
-      text-align: center;
-      padding: 0px;
-      margin: 0px;
-      height: 40px;
-      padding-top: 10px;
-  }
-
-  #header{
-  width: 100%;
-    font-family: 'Allerta', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-}
-
-
-  .animation{
-    animation-name: word;
-    animation-duration: .5s;
-  }
-
-  @keyframes word {
-    0%   {transform: scale(0);}
-    50%   {transform: scale(1.5);}
-    100% {transform: scale(1);}
-  }
-  #footer{
-      position: relative;
-      background-color: blue;
-      height: 20px;
-      top: 630px;
-      left:0px;
-      width:144px;
-      transform: scaleX(10);
-      transform-origin:left ;
-      transition: all 1s linear ;
-  }
+    height: 50px;
+    background-color: blanchedalmond;
+    color: antiquewhite;
+      }
+    
+      #header1{
+          background-color: beige;
+          font-family: 'Allerta', sans-serif;
+          font-size: 20px;
+          text-align: center;
+          padding: 0px;
+          margin: 0px;
+          height: 40px;
+          padding-top: 10px;
+      }
+    
+      #header{
+      width: 100%;
+        font-family: 'Allerta', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    
+      .animation{
+        animation-name: word;
+        animation-duration: .5s;
+      }
+    
+      @keyframes word {
+        0%   {transform: scale(0);}
+        50%   {transform: scale(1.5);}
+        100% {transform: scale(1);}
+      }
+      #footer{
+          position: relative;
+          background-color: blue;
+          height: 20px;
+          top: 630px;
+          left:0px;
+          width:144px;
+          transform: scaleX(10);
+          transform-origin:left ;
+          transition: all 1s linear ;
+      }
