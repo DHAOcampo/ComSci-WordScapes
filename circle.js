@@ -18,6 +18,15 @@ if(counter > 10){
     }
 }
 
+function gameBegin(){
+document.getElementById("starto").style.display = "none";
+document.getElementById("Unravel").play();
+setInterval(timeremain, 1000);
+      timeout = setTimeout(circle0, 8000);
+      timeout = setTimeout(circle1, 8440);
+      timeout = setTimeout(circle2, 9320);
+      timeout = setTimeout(circle3, 9760);
+}
 
 function circle0(){
 
@@ -40,7 +49,7 @@ function circle0(){
 
   function boxdeath(){
       element.remove();
-  head.innerHTML = "BAD"; 
+  head.innerHTML = "BAD";
   head.classList.remove('animation');
   void head.offsetWidth;
   head.classList.add('animation');
@@ -91,7 +100,7 @@ function circle1(){
 
   function boxdeath(){
       element.remove();
-  head.innerHTML = "BAD"; 
+  head.innerHTML = "BAD";
   head.classList.remove('animation');
   void head.offsetWidth;
   head.classList.add('animation');
@@ -140,7 +149,7 @@ function circle2(){
 
   function boxdeath(){
       element.remove();
-  head.innerHTML = "BAD"; 
+  head.innerHTML = "BAD";
   head.classList.remove('animation');
   void head.offsetWidth;
   head.classList.add('animation');
@@ -189,7 +198,7 @@ function circle3(){
 
   function boxdeath(){
       element.remove();
-  head.innerHTML = "BAD"; 
+  head.innerHTML = "BAD";
   head.classList.remove('animation');
   void head.offsetWidth;
   head.classList.add('animation');
