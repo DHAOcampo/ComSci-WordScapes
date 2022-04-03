@@ -11,6 +11,7 @@ if(counter > 10){
     }
     if (counter == 0){
         document.getElementById('footer').remove();
+        document.getElementById("Unravel").pause();
         var game = document.createElement("div");
    game.setAttribute('class','end');
         document.getElementById("body").appendChild(game);
