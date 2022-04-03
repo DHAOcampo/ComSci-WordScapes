@@ -32,11 +32,13 @@ if(counter > 10){
   game.appendChild(done);
   done.innerHTML = "GAMEOVER";
 }
-    }
-}
-function restartbutton(){
+        
+        function restartbutton(){
   document.location.reload(true);
 }
+    }
+}
+
 function gameBegin(){
 document.getElementById("starto").style.display = "none";
 document.getElementById("Unravel").play();
