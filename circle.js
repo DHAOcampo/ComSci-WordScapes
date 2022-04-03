@@ -9,6 +9,15 @@ if(counter > 10){
     if (counter<0){
       counter = 0;
     }
+    
+    if(counter == 5){
+  document.getElementById('footer').style.backgroundColor = "yellow";
+}
+
+if(counter == 3){
+  document.getElementById('footer').style.backgroundColor = "red";
+}
+
     if (counter == 0){
         document.getElementById('footer').remove();
         document.getElementById("Unravel").pause();
