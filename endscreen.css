@@ -1,0 +1,90 @@
+.end{
+    position: absolute;
+    top: 0px;
+    height: 700px;
+    width:1440px;
+    animation-name: fade;
+    animation-duration: 2s;
+    background-image: url("gameover.gif");
+    background-size: cover;
+    transform:scaleY(1);
+    z-index: 45555;
+    padding-bottom: 10px;
+    font-family: 'Allerta', sans-serif;
+}
+
+.end2{
+    position: absolute;
+    top: 0px;
+    height: 700px;
+    width:1440px;
+    animation-name: gameover;
+    animation-duration: 1s;
+background-color: #0f1014;
+    transform:scaleY(1);
+    z-index: 45555;
+    padding-bottom: 10px;
+    font-family: 'Allerta', sans-serif;
+    z-index:45554;
+}
+
+@keyframes gameover{
+    0%  {transform: scale(0, .14);}
+    20%  {transform: scale(1 ,.14);}
+    30%   {transform: scaleY(.14);}
+    100% {transform: scaleY(1);}
+}
+
+.restart{
+    width: 300px;
+    height:80px;
+    position:absolute;
+top:500px;
+left: 570px;
+   background-color: rgb(23, 25, 29);
+padding-top: 10px;
+    border-radius: 5px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    animation-name:fade ;
+animation-duration: 0.5s;
+}
+
+.restart:hover{
+    color: rgb(219, 219, 219);
+    background-color: rgb(28, 34, 43);
+}
+
+.gameover{
+    width: 1000px;
+    position:absolute;
+    padding-bottom: 10px;
+    background-color: rgb(23, 25, 29);
+left: 220px;
+top: 100px;
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #0f1014,
+        1px 2px 1px #0f1014,
+        1px 3px 1px #0f1014,
+        1px 4px 1px #0f1014,
+        1px 5px 1px #0f1014,
+        1px 6px 1px #0f1014,
+        1px 7px 1px #0f1014,
+        1px 8px 1px #0f1014,
+        1px 9px 1px #0f1014,
+        1px 10px 1px #0f1014,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+animation-name:fade ;
+animation-duration: 0.5s;
+}
+@keyframes fade{
+    0%  {opacity: 0;}
+    100% {opacity: 1;}
+}
