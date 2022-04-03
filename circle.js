@@ -34,7 +34,9 @@ if(counter > 10){
 }
     }
 }
-
+function restartbutton(){
+  document.location.reload(true);
+}
 function gameBegin(){
 document.getElementById("starto").style.display = "none";
 document.getElementById("Unravel").play();
