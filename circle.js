@@ -15,7 +15,23 @@ if(counter > 10){
         var game = document.createElement("div");
    game.setAttribute('class','end');
         document.getElementById("body").appendChild(game);
+        var game2 = document.createElement("div");
+        game2.setAttribute('class','end2');
+             document.getElementById("body").appendChild(game2);
+        timeout = setTimeout(endscreen, 1000);
         window.alert(endscore);
+        
+        function endscreen(){
+  var restart = document.createElement("div");
+  restart.setAttribute('class','restart');
+  game.appendChild(restart);
+  restart.addEventListener("click", restartbutton);
+  restart.innerHTML = "RESTART";
+  var done = document.createElement("div");
+  done.setAttribute('class','gameover');
+  game.appendChild(done);
+  done.innerHTML = "GAMEOVER";
+}
     }
 }
 
