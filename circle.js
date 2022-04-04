@@ -55,42 +55,23 @@ document.getElementById("starto").style.display = "none";
 document.getElementById("Unravel").play();
 setInterval(timeremain, 1000);
           timeout = setTimeout(circle0, 8000);
-          timeout = setTimeout(circle1, 8440);
-          timeout = setTimeout(circle2, 8880);
-          timeout = setTimeout(circle3, 9320);
-          timeout = setTimeout(circle4, 9760);
-          timeout = setTimeout(circle5, 9980);
-          timeout = setTimeout(circle6, 10420);
-          timeout = setTimeout(circle7, 10860);
-          timeout = setTimeout(circle8, 11300);
-          timeout = setTimeout(circle9, 11520);
-          timeout = setTimeout(circle10, 11740);
-          timeout = setTimeout(circle11, 11960);
-          timeout = setTimeout(circle12, 12840);
-          timeout = setTimeout(circle13, 13280);
-          timeout = setTimeout(circle14, 14600);
-          timeout = setTimeout(circle15, 14820);
-          timeout = setTimeout(circle16, 15260);
-          timeout = setTimeout(circle17, 15480);
-          timeout = setTimeout(circle18, 15920);
-          timeout = setTimeout(circle19, 16360);
-          timeout = setTimeout(circle20, 16580);
-          timeout = setTimeout(circle21, 17020);
-          timeout = setTimeout(circle22, 17460);
-          timeout = setTimeout(circle23, 17680);
-          timeout = setTimeout(circle24, 17790);
-          timeout = setTimeout(circle25, 18340);
-          timeout = setTimeout(circle26, 18780);
-          timeout = setTimeout(circle27, 19220);
-          timeout = setTimeout(circle28, 19660);
-          timeout = setTimeout(circle29, 20100);
-          timeout = setTimeout(circle30, 20320);
-          timeout = setTimeout(circle31, 20540);
-          timeout = setTimeout(circle32, 20980);
-          timeout = setTimeout(circle33, 21200);
-          timeout = setTimeout(circle34, 21640);
-          timeout = setTimeout(circle35, 22080);
-          timeout = setTimeout(circle36, 22520);
+          timeout = setTimeout(circle1, 8880);
+          timeout = setTimeout(circle2, 9760);
+          timeout = setTimeout(circle3, 10420);
+          timeout = setTimeout(circle4, 11300);
+          timeout = setTimeout(circle5, 11740);
+          timeout = setTimeout(circle6, 12840);
+          timeout = setTimeout(circle7, 13720);
+          timeout = setTimeout(circle8, 14820);
+          timeout = setTimeout(circle9, 15480);
+          timeout = setTimeout(circle10, 16360);
+          timeout = setTimeout(circle11, 17460);
+          timeout = setTimeout(circle12, 18340);
+          timeout = setTimeout(circle13, 19220);
+          timeout = setTimeout(circle14, 20100);
+          timeout = setTimeout(circle15, 20980);
+          timeout = setTimeout(circle16, 21640);
+          timeout = setTimeout(circle17, 22520);
 }
 
 function circle0(){
@@ -103,9 +84,9 @@ function circle0(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 1250);
+          timeout = setTimeout(score_perfect, 2250);
   element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 1200);
+  yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -154,9 +135,9 @@ function circle1(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -203,9 +184,9 @@ function circle2(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -252,10 +233,9 @@ function circle3(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
-
+        yes = setTimeout(boxdeath, 2200);
   function score_perfect(){
   element.removeEventListener("click", scoregood);
   element.addEventListener("click", scoreperfect);
@@ -301,9 +281,9 @@ function circle4(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
-        element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        timeout = setTimeout(score_perfect, 2250);
+  element.addEventListener("click",element.remove);
+  yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -350,9 +330,9 @@ function circle5(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -399,9 +379,9 @@ function circle6(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
-        element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        timeout = setTimeout(score_perfect, 2250);
+  element.addEventListener("click",element.remove);
+  yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -448,9 +428,9 @@ function circle7(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -497,9 +477,9 @@ function circle8(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          ttimeout = setTimeout(score_perfect, 1250);
-          element.addEventListener("click",element.remove);
-          yes = setTimeout(boxdeath, 1200);
+        timeout = setTimeout(score_perfect, 2250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -546,9 +526,9 @@ function circle9(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -595,9 +575,9 @@ function circle10(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -644,9 +624,9 @@ function circle11(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -693,9 +673,9 @@ function circle12(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -742,9 +722,9 @@ function circle13(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -791,9 +771,9 @@ function circle14(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -840,9 +820,9 @@ function circle15(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -889,9 +869,9 @@ function circle16(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -938,9 +918,9 @@ function circle17(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 1250);
+        timeout = setTimeout(score_perfect, 2250);
         element.addEventListener("click",element.remove);
-        yes = setTimeout(boxdeath, 1200);
+        yes = setTimeout(boxdeath, 2200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
