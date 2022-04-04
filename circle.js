@@ -4,8 +4,10 @@ function timeremain() {
 if(counter > 10){
     counter = 10;
 }
-    counter--
+   if(counter>0){
+       counter--
     document.getElementById('footer').style.transform =`scaleX(${counter})`;
+   }
     if (counter<0){
       counter = 0;
     }
