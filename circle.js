@@ -98,7 +98,8 @@ setInterval(timeremain, 1000);
           timeout = setTimeout(circle41, 52330);
           timeout = setTimeout(circle42, 53210);
           timeout = setTimeout(circle43, 55210);
-
+          timeout = setTimeout(circle44, 56090);
+          timeout = setTimeout(circle45, 56970);
 }
 
 function circle44(){
