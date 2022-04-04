@@ -642,14 +642,6 @@
         top: 100px;
         left:620px;
         background-color:olive;
-    }
-    #element93 {
-        position:fixed;
-        top: 100px;
-        left:820px;
-        background-color:olive;
-    }
-
 
     .ring{
         height: 120px;
@@ -717,4 +709,5 @@
           transform-origin:left ;
           transition: all 1s linear ;
       }
+
 
