@@ -188,7 +188,7 @@
     #element17 {
         position:fixed;
         top:500px;
-        left:400px;
+        left:700px;
         background-color:plum;
     }
     #element18 {
@@ -229,7 +229,7 @@
     }
     #element24 {
         position:fixed;
-        top:330px;
+        top:400px;
         left:950px;
         background-color:blanchedalmond;
     }
@@ -267,7 +267,7 @@
     #element30 {
         position:fixed;
         top:450px;
-        left:1050px;
+        left:1400px;
         background-color:olive;
     }
     #element31 {
@@ -310,13 +310,43 @@
         position:fixed;
         top:450px;
         left:1200px;
-        background-color:blanchedalmond;
+        background-color:palevioletred;
     }
     #element38 {
         position:fixed;
         top:300px;
         left:1000px;
-        background-color:blanchedalmond;
+        background-color:palevioletred;
+    }
+    #element39 {
+        position:fixed;
+        top:100px;
+        left:400px;
+        background-color:paleturquoise;
+    }
+    #element40 {
+        position:fixed;
+        top:300px;
+        left:500px;
+        background-color:paleturquoise;
+    }
+    #element41 {
+        position:fixed;
+        top:500px;
+        left:500px;
+        background-color:olivedrab;
+    }
+    #element42 {
+        position:fixed;
+        top:450px;
+        left:1000px;
+        background-color:olivedrab;
+    }
+    #element43 {
+        position:fixed;
+        top:450px;
+        left:1200px;
+        background-color:olivedrab;
     }
     .ring{
         height: 120px;
