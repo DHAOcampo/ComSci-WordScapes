@@ -117,7 +117,7 @@ setInterval(timeremain, 1000);
           timeout = setTimeout(circle60, 67200);
           timeout = setTimeout(circle61, 67400);
 
-          timeout = setTimeout(circle62, 68600);
+          timeout = setTimeout(circle62, 68400);
           timeout = setTimeout(circle63, 68900);
 
           timeout = setTimeout(circle64, 69400);
@@ -155,7 +155,6 @@ setInterval(timeremain, 1000);
           timeout = setTimeout(circle90, 83160);
           timeout = setTimeout(circle91, 83820);
           timeout = setTimeout(circle92, 84700);
-          timeout = setTimeout(circle93, 85580);
 }
 
 
@@ -4901,53 +4900,4 @@ function circle92(){
   }
 }
 
-function circle93(){
-
-  var element = document.createElement("div");
-  var ring = document.createElement("div");
-  ring.setAttribute('class','ring');
-        element.setAttribute('id','element93');
-          element.setAttribute('class','circle');
-          document.getElementById("body").appendChild(element);
-          element.appendChild(ring);
-        element.addEventListener("click", scoregood);
-        var timeout = setTimeout(score_perfect, 1000);
-        element.addEventListener("click",element.remove);
-        var yes = setTimeout(boxdeath, 1500);
-
-  function score_perfect(){
-  element.removeEventListener("click", scoregood);
-  element.addEventListener("click", scoreperfect);
-  }
-
-  function boxdeath(){
-      element.remove();
-  head.innerHTML = "BAD";
-  head.classList.remove('animation');
-  void head.offsetWidth;
-  head.classList.add('animation');
-  counter = counter - 3;
-  endscore -= 100;
-  }
-
-  var head =  document.getElementById("header");
-  function scoregood(){
-    clearTimeout(yes);
-    head.innerHTML = "GOOD";
-    head.classList.remove('animation');
-    void head.offsetWidth;
-    head.classList.add('animation');
-  counter = counter + 5;
-  endscore += 300;
-  }
-  function scoreperfect(){
-    clearTimeout(yes);
-      head.innerHTML = "PERFECT";
-  head.classList.remove('animation');
-    void head.offsetWidth;
-    head.classList.add('animation');
-      counter = counter + 10;
-      endscore += 500;
-  }
-}
 
