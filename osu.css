@@ -86,7 +86,7 @@
         left:200px;
         background-color: aquamarine;
     }
-    
+
     #element1{
         position: fixed;
         top:300px;
@@ -105,7 +105,7 @@
         left:500px;
         background-color:pink;
     }
-    
+
     #element4{
         position: fixed;
         top:300px;
@@ -199,7 +199,7 @@
     }
     #element19 {
         position:fixed;
-        top:700px;
+        top:200px;
         left:600px;
         background-color: aquamarine;
     }
@@ -345,21 +345,312 @@
     #element43 {
         position:fixed;
         top:450px;
-        left:1200px;
+        left:800px;
         background-color:olivedrab;
     }
     #element44 {
         position:fixed;
-        top:600px;
-        left:900px;
+        top:450px;
+        left:600px;
         background-color:olive;
     }
     #element45 {
         position:fixed;
-        top:400px;
-        left:700px;
+        top:350px;
+        left:720px;
         background-color:olive;
     }
+
+    #element46 {
+        position:fixed;
+        top: 60px;
+        left:720px;
+        background-color:olive;
+    }
+    #element47 {
+        position:fixed;
+        top:220px;
+        left:720px;
+        background-color:olive;
+    }
+    #element48 {
+        position:fixed;
+        top:380px;
+        left:720px;
+        background-color:olive;
+    }
+    #element49 {
+        position:fixed;
+        top: 540px;
+        left:720px;
+        background-color:olive;
+    }
+    #element50 {
+        position:fixed;
+        top: 460px;
+        left:820px;
+        background-color:olive;
+    }
+    #element51 {
+        position:fixed;
+        top: 240px;
+        left:820px;
+        background-color:olive;
+    }
+    #element52 {
+        position:fixed;
+        top: 60px;
+        left:920px;
+        background-color:olive;
+    }
+    #element53 {
+        position:fixed;
+        top: 220px;
+        left:920px;
+        background-color:olive;
+    }
+    #element54 {
+        position:fixed;
+        top: 380px;
+        left:920px;
+        background-color:olive;
+    }
+    #element55 {
+        position:fixed;
+        top: 540px;
+        left:920px;
+        background-color:olive;
+    }
+    #element56 {
+        position:fixed;
+        top: 460px;
+        left: 620px;
+        background-color:olive;
+    }
+    #element57 {
+        position:fixed;
+        top: 240px;
+        left:620px;
+        background-color:olive;
+    }
+    #element58 {
+        position:fixed;
+        top: 60px;
+        left:520px;
+        background-color:olive;
+    }
+    #element59 {
+        position:fixed;
+        top: 220px;
+        left:520px;
+        background-color:olive;
+    }
+    #element60 {
+        position:fixed;
+        top: 380px;
+        left:520px;
+        background-color:olive;
+    }
+    #element61 {
+        position:fixed;
+        top: 540px;
+        left:520px;
+        background-color:olive;
+    }
+    #element62 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element63 {
+        position:fixed;
+        top: 350px;
+        left:820px;
+        background-color:olive;
+    }
+    #element64 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element65 {
+        position:fixed;
+        top: 350px;
+        left:820px;
+        background-color:olive;
+    }
+    #element66 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element67 {
+        position:fixed;
+        top: 350px;
+        left:820px;
+        background-color:olive;
+    }
+    #element68 {
+        position:fixed;
+        top: 150px;
+        left:620px;
+        background-color:olive;
+    }
+    #element69 {
+        position:fixed;
+        top: 150px;
+        left:820px;
+        background-color:olive;
+    }
+    #element70 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element71 {
+        position:fixed;
+        top: 350px;
+        left:820px;
+        background-color:olive;
+    }
+    #element72 {
+        position:fixed;
+        top: 550px;
+        left:620px;
+        background-color:olive;
+    }
+    #element73 {
+        position:fixed;
+        top: 550px;
+        left:820px;
+        background-color:olive;
+    }
+    #element74 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element75 {
+        position:fixed;
+        top: 350px;
+        left:820px;
+        background-color:olive;
+    }
+    #element76 {
+        position:fixed;
+        top: 150px;
+        left:620px;
+        background-color:olive;
+    }
+    #element77 {
+        position:fixed;
+        top: 150px;
+        left:820px;
+        background-color:olive;
+    }
+    #element78 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element79 {
+        position:fixed;
+        top: 350px;
+        left:820px;
+        background-color:olive;
+    }
+    #element80 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element81 {
+        position:fixed;
+        top: 350px;
+        left:820px;
+        background-color:olive;
+    }
+    #element82 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element83 {
+        position:fixed;
+        top: 350px;
+        left:670px;
+        background-color:olive;
+    }
+    #element84 {
+        position:fixed;
+        top: 350px;
+        left:720px;
+        background-color:olive;
+    }
+    #element85 {
+        position:fixed;
+        top: 350px;
+        left:770px;
+        background-color:olive;
+    }
+    #element86 {
+        position:fixed;
+        top: 350px;
+        left:820px;
+        background-color:olive;
+    }
+    #element87 {
+        position:fixed;
+        top: 350px;
+        left:620px;
+        background-color:olive;
+    }
+    #element88 {
+        position:fixed;
+        top: 100px;
+        left: 620px;
+        background-color:olive;
+    }
+    #element89 {
+        position:fixed;
+        top: 100px;
+        left:820px;
+        background-color:olive;
+    }
+    #element90 {
+        position:fixed;
+        top: 600px;
+        left:820px;
+        background-color:olive;
+    }
+    #element91 {
+        position:fixed;
+        top: 600px;
+        left:620px;
+        background-color:olive;
+    }
+    #element92 {
+        position:fixed;
+        top: 100px;
+        left:620px;
+        background-color:olive;
+    }
+    #element93 {
+        position:fixed;
+        top: 100px;
+        left:820px;
+        background-color:olive;
+    }
+
+
     .ring{
         height: 120px;
         width: 120px;
@@ -369,7 +660,7 @@
         right:13px;
         bottom: 13px;
         animation-name: ring;
-        animation-duration: 2.25s;
+        animation-duration: 2s;
         transform: scale(0);
     }
     @keyframes ring {
@@ -426,3 +717,4 @@
           transform-origin:left ;
           transition: all 1s linear ;
       }
+
