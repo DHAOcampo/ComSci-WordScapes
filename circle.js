@@ -6,22 +6,22 @@ if(counter > 10){
 }
    if(counter>0){
        counter--
-    document.getElementById('footer').style.transform =`scaleX(${counter})`;
+    document.getElementById("footer").style.transform =`scaleX(${counter})`;
    }
     if (counter<0){
       counter = 0;
     }
-    
+
     if(counter == 5){
-  document.getElementById('footer').style.backgroundColor = "yellow";
+  document.getElementById("footer").style.backgroundColor = "yellow";
 }
 
 if(counter == 3){
-  document.getElementById('footer').style.backgroundColor = "red";
+  document.getElementById("footer").style.backgroundColor = "red";
 }
 
     if (counter == 0){
-        document.getElementById('footer').remove();
+      document.getElementById("footer").remove();
         document.getElementById("Unravel").pause();
         var game = document.createElement("div");
    game.setAttribute('class','end');
@@ -31,7 +31,7 @@ if(counter == 3){
              document.getElementById("body").appendChild(game2);
         timeout = setTimeout(endscreen, 1000);
         window.alert(endscore);
-        
+
         function endscreen(){
   var restart = document.createElement("div");
   restart.setAttribute('class','restart');
@@ -81,6 +81,16 @@ setInterval(timeremain, 1000);
           timeout = setTimeout(circle24, 17790);
           timeout = setTimeout(circle25, 18340);
           timeout = setTimeout(circle26, 18780);
+          timeout = setTimeout(circle27, 19220);
+          timeout = setTimeout(circle28, 19660);
+          timeout = setTimeout(circle29, 20100);
+          timeout = setTimeout(circle30, 20320);
+          timeout = setTimeout(circle31, 20540);
+          timeout = setTimeout(circle32, 20980);
+          timeout = setTimeout(circle33, 21200);
+          timeout = setTimeout(circle34, 21640);
+          timeout = setTimeout(circle35, 22080);
+          timeout = setTimeout(circle36, 22520);
 }
 
 function circle0(){
@@ -93,9 +103,9 @@ function circle0(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 8200);
+          timeout = setTimeout(score_perfect, 1250);
   element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 8440);
+  yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -144,9 +154,9 @@ function circle1(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 8600);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 8880);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -193,9 +203,9 @@ function circle2(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 9100);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 9320);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -242,9 +252,9 @@ function circle3(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 9500);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 9760);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -291,9 +301,9 @@ function circle4(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 9700);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 9980);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -340,9 +350,9 @@ function circle5(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 10200);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 10420);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -389,9 +399,9 @@ function circle6(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 10600);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 10860);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -438,9 +448,9 @@ function circle7(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 11100);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 11300);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -487,9 +497,9 @@ function circle8(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 11500);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 11740);
+          ttimeout = setTimeout(score_perfect, 1250);
+          element.addEventListener("click",element.remove);
+          yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -536,9 +546,9 @@ function circle9(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 11600);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 11740);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -585,9 +595,9 @@ function circle10(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 11800);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 11960);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -634,9 +644,9 @@ function circle11(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 12400);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 12200);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -683,9 +693,9 @@ function circle12(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-        timeout = setTimeout(score_perfect, 13100);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 13280);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -732,9 +742,9 @@ function circle13(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 13500);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 13720);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -781,9 +791,9 @@ function circle14(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 14700);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 14820);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -830,9 +840,9 @@ function circle15(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 14900);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 15040);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -879,9 +889,9 @@ function circle16(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 15300);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 15480);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -928,9 +938,9 @@ function circle17(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 15700);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 15920);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -977,9 +987,9 @@ function circle18(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 16100);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 16360);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -1026,9 +1036,9 @@ function circle19(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 16400);
+  element.timeout = setTimeout(score_perfect, 1250);
   element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 16580);
+  yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -1075,9 +1085,9 @@ function circle20(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 16800);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 17020);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -1124,10 +1134,9 @@ function circle21(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 17200);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 17460);
-
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
   function score_perfect(){
   element.removeEventListener("click", scoregood);
   element.addEventListener("click", scoreperfect);
@@ -1173,9 +1182,9 @@ function circle22(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 17500);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 17680);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -1222,10 +1231,9 @@ function circle23(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 17750);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 17790);
-
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
   function score_perfect(){
   element.removeEventListener("click", scoregood);
   element.addEventListener("click", scoreperfect);
@@ -1271,9 +1279,9 @@ function circle24(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 17850);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 17900);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -1320,9 +1328,9 @@ function circle25(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 18500);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 18780);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
   function score_perfect(){
   element.removeEventListener("click", scoregood);
@@ -1369,10 +1377,499 @@ function circle26(){
           document.getElementById("body").appendChild(element);
           element.appendChild(ring);
         element.addEventListener("click", scoregood);
-          timeout = setTimeout(score_perfect, 19000);
-  element.addEventListener("click",element.remove);
-  yes = setTimeout(boxdeath, 19220);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
 
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle27(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element27');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle28(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element28');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle29(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element29');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle30(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element30');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle31(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element31');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle32(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element32');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+function circle33(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element33');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle34(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element34');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle35(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element35');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+
+  function score_perfect(){
+  element.removeEventListener("click", scoregood);
+  element.addEventListener("click", scoreperfect);
+  }
+
+  function boxdeath(){
+      element.remove();
+  head.innerHTML = "BAD"; 
+  head.classList.remove('animation');
+  void head.offsetWidth;
+  head.classList.add('animation');
+  counter = counter - 3;
+  endscore -= 100;
+  }
+
+  var head =  document.getElementById("header");
+  function scoregood(){
+
+    head.innerHTML = "GOOD";
+    head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+  counter = counter + 5;
+  endscore += 300;
+  }
+  function scoreperfect(){
+      head.innerHTML = "PERFECT";
+  head.classList.remove('animation');
+    void head.offsetWidth;
+    head.classList.add('animation');
+      counter = counter + 10;
+      endscore += 500;
+  }
+}
+
+function circle36(){
+
+  var element = document.createElement("div");
+  var ring = document.createElement("div");
+  ring.setAttribute('class','ring');
+        element.setAttribute('id','element35');
+          element.setAttribute('class','circle');
+          document.getElementById("body").appendChild(element);
+          element.appendChild(ring);
+        element.addEventListener("click", scoregood);
+        timeout = setTimeout(score_perfect, 1250);
+        element.addEventListener("click",element.remove);
+        yes = setTimeout(boxdeath, 1200);
+        
   function score_perfect(){
   element.removeEventListener("click", scoregood);
   element.addEventListener("click", scoreperfect);
