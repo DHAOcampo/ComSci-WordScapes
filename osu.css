@@ -675,7 +675,7 @@
       }
 
       #header1{
-          background-color: beige;
+          background-color: #0f1014;
           font-family: 'Allerta', sans-serif;
           font-size: 20px;
           text-align: center;
@@ -692,6 +692,7 @@
         text-align: center;
         padding: 0px;
         margin: 0px;
+        color: white;
     }
 
 
