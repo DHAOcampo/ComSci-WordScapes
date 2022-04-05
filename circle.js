@@ -100,14 +100,14 @@ setInterval(timeremain, 1000);
           timeout = setTimeout(circle43, 53550);
           timeout = setTimeout(circle44, 53750);
           timeout = setTimeout(circle45, 54600);
-          timeout = setTimeout(circle46, 55800);
-          timeout = setTimeout(circle47, 56000);
+          timeout = setTimeout(circle46, 55600);
+          timeout = setTimeout(circle47, 55900);
           timeout = setTimeout(circle48, 56200);
           timeout = setTimeout(circle49, 56400);
           timeout = setTimeout(circle50, 59000);
           timeout = setTimeout(circle51, 60600);
-          timeout = setTimeout(circle52, 61800);
-          timeout = setTimeout(circle53, 62000);
+          timeout = setTimeout(circle52, 61600);
+          timeout = setTimeout(circle53, 61900);
           timeout = setTimeout(circle54, 62200);
           timeout = setTimeout(circle55, 62400);
           timeout = setTimeout(circle56, 64000);
@@ -116,9 +116,6 @@ setInterval(timeremain, 1000);
           timeout = setTimeout(circle59, 67000);
           timeout = setTimeout(circle60, 67200);
           timeout = setTimeout(circle61, 67400);
-
-          timeout = setTimeout(circle62, 68400);
-          timeout = setTimeout(circle63, 68900);
 
           timeout = setTimeout(circle64, 69400);
           timeout = setTimeout(circle65, 69900);
@@ -143,18 +140,18 @@ setInterval(timeremain, 1000);
           timeout = setTimeout(circle80, 77400);
           timeout = setTimeout(circle81, 77900);
 
-          timeout = setTimeout(circle82, 78400);
-          timeout = setTimeout(circle83, 78650);
-          timeout = setTimeout(circle84, 78900);
-          timeout = setTimeout(circle85, 79150);
-          timeout = setTimeout(circle86, 79400);
-          timeout = setTimeout(circle87, 80400);
+          timeout = setTimeout(circle82, 78200);
+          timeout = setTimeout(circle83, 78450);
+          timeout = setTimeout(circle84, 78700);
+          timeout = setTimeout(circle85, 78950);
+          timeout = setTimeout(circle86, 79100);
+          timeout = setTimeout(circle87, 80100);
 
-          timeout = setTimeout(circle88, 81400);
-          timeout = setTimeout(circle89, 82280);
-          timeout = setTimeout(circle90, 83160);
-          timeout = setTimeout(circle91, 83820);
-          timeout = setTimeout(circle92, 84700);
+          timeout = setTimeout(circle88, 81100);
+          timeout = setTimeout(circle89, 81800);
+          timeout = setTimeout(circle90, 82800);
+          timeout = setTimeout(circle91, 83500);
+          timeout = setTimeout(circle92, 83900);
 }
 
 
@@ -3300,106 +3297,6 @@ function circle61(){
   }
 }
 
-function circle62(){
-
-  var element = document.createElement("div");
-  var ring = document.createElement("div");
-  ring.setAttribute('class','ring');
-        element.setAttribute('id','element62');
-          element.setAttribute('class','circle');
-          document.getElementById("body").appendChild(element);
-          element.appendChild(ring);
-        element.addEventListener("click", scoregood);
-        var timeout = setTimeout(score_perfect, 1000);
-        element.addEventListener("click",element.remove);
-        var yes = setTimeout(boxdeath, 1500);
-
-  function score_perfect(){
-  element.removeEventListener("click", scoregood);
-  element.addEventListener("click", scoreperfect);
-  }
-
-  function boxdeath(){
-      element.remove();
-  head.innerHTML = "BAD";
-  head.classList.remove('animation');
-  void head.offsetWidth;
-  head.classList.add('animation');
-  counter = counter - 3;
-  endscore -= 100;
-  }
-
-  var head =  document.getElementById("header");
-  function scoregood(){
-    clearTimeout(yes);
-    head.innerHTML = "GOOD";
-    head.classList.remove('animation');
-    void head.offsetWidth;
-    head.classList.add('animation');
-  counter = counter + 5;
-  endscore += 300;
-  }
-  function scoreperfect(){
-    clearTimeout(yes);
-      head.innerHTML = "PERFECT";
-  head.classList.remove('animation');
-    void head.offsetWidth;
-    head.classList.add('animation');
-      counter = counter + 10;
-      endscore += 500;
-  }
-}
-
-function circle63(){
-
-  var element = document.createElement("div");
-  var ring = document.createElement("div");
-  ring.setAttribute('class','ring');
-        element.setAttribute('id','element63');
-          element.setAttribute('class','circle');
-          document.getElementById("body").appendChild(element);
-          element.appendChild(ring);
-        element.addEventListener("click", scoregood);
-        var timeout = setTimeout(score_perfect, 1000);
-        element.addEventListener("click",element.remove);
-        var yes = setTimeout(boxdeath, 1500);
-
-  function score_perfect(){
-  element.removeEventListener("click", scoregood);
-  element.addEventListener("click", scoreperfect);
-  }
-
-  function boxdeath(){
-      element.remove();
-  head.innerHTML = "BAD";
-  head.classList.remove('animation');
-  void head.offsetWidth;
-  head.classList.add('animation');
-  counter = counter - 3;
-  endscore -= 100;
-  }
-
-  var head =  document.getElementById("header");
-  function scoregood(){
-    clearTimeout(yes);
-    head.innerHTML = "GOOD";
-    head.classList.remove('animation');
-    void head.offsetWidth;
-    head.classList.add('animation');
-  counter = counter + 5;
-  endscore += 300;
-  }
-  function scoreperfect(){
-    clearTimeout(yes);
-      head.innerHTML = "PERFECT";
-  head.classList.remove('animation');
-    void head.offsetWidth;
-    head.classList.add('animation');
-      counter = counter + 10;
-      endscore += 500;
-  }
-}
-
 function circle64(){
 
   var element = document.createElement("div");
@@ -4899,5 +4796,6 @@ function circle92(){
       endscore += 500;
   }
 }
+
 
 
