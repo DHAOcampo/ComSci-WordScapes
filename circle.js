@@ -151,7 +151,7 @@ setInterval(timeremain, 1000);
           timeout = setTimeout(circle89, 81800);
           timeout = setTimeout(circle90, 82800);
           timeout = setTimeout(circle91, 83500);
-          timeout = setTimeout(circle92, 83900);
+          timeout = setTimeout(circle92, 83700);
 }
 
 
