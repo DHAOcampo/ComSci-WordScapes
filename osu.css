@@ -586,69 +586,69 @@
     #element82 {
         position:fixed;
         top: 350px;
-        left:620px;
-        background-color:olivedrab;
+        left:720px;
+        background-color:#fc0303;
     }
     #element83 {
         position:fixed;
         top: 350px;
-        left:670px;
-        background-color:olivedrab;
+        left:720px;
+        background-color:#fc7303;
     }
     #element84 {
         position:fixed;
         top: 350px;
         left:720px;
-        background-color:olivedrab;
+        background-color:#fce703;
     }
     #element85 {
         position:fixed;
         top: 350px;
-        left:770px;
-        background-color:olivedrab;
+        left:720px;
+        background-color:#07fc03;
     }
     #element86 {
         position:fixed;
         top: 350px;
-        left:820px;
-        background-color:olivedrab;
+        left:720px;
+        background-color:#0388fc;
     }
     #element87 {
         position:fixed;
         top: 350px;
-        left:620px;
-        background-color:palevioletred;
+        left:720px;
+        background-color:#8003fc;
     }
     #element88 {
         position:fixed;
-        top: 100px;
+        top: 200px;
         left: 620px;
-        background-color:plum;
+        background-color:magenta;
     }
     #element89 {
         position:fixed;
-        top: 100px;
+        top: 200px;
         left:820px;
-        background-color:plum;
+        background-color:magenta;
     }
     #element90 {
         position:fixed;
-        top: 600px;
+        top: 500px;
         left:820px;
-        background-color:pink;
+        background-color:magenta;
     }
     #element91 {
         position:fixed;
-        top: 600px;
+        top: 500px;
         left:620px;
-        background-color:pink;
+        background-color:magenta;
     }
     #element92 {
         position:fixed;
-        top: 100px;
+        top: 200px;
         left:620px;
         background-color:magenta;
-}
+      }
 
     .ring{
         height: 120px;
